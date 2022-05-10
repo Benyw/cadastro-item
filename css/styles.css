@@ -1,0 +1,60 @@
+.post{
+	border: solid #ccc 1px;
+	border-radius: 10px;
+}
+
+.post-item{
+	width: 50%;
+	height: 70%;
+}
+
+.footer {
+	background-color: #62455B;
+}
+
+.footer p {
+	color: #FFF;
+}
+
+.footer-icon {
+	color: #FFF;
+}
+
+.box {
+	border: solid #ccc 1px;
+	border-radius: 15px;
+	padding: 15px 15px 15px 15px;
+}
+
+html, body {
+	height:100%;
+	background-color: #C1D9D0;
+}
+
+.footer-fixed{
+	position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+.nav-style {
+	background-color: #62455B;
+}
+
+.nav-style a {
+	color: #FFF;
+}
+
+.active-link {
+	color: #FFF;
+	font-weight: bold;
+}
+
+.nav-item a:hover {
+	text-decoration: none;
+	color: #CCC;
+}
+
+textarea {
+	resize: none;
+}
