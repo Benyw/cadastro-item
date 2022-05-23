@@ -5,18 +5,17 @@
 		
 		#Função conectar() - Retorna um objeto da classe PDO (Conexão com o banco de dados)
 		function conectar(){
-            return $conn = new PDO("mysql:dbname=estoque_papelaria;host=localhost;charset=utf8", "root", "");
+            return $conn = new PDO("mysql:dbname=itens;host=localhost;charset=utf8", "benyw", "1521");
 		}
 
 		#Função executar() - Executa uma query SQL (Inserção, Atualização ou Remoção). Caso a execução ocorra bem, retorna o valor 1
 		function executar($query, $array){
 			$stmt = $this->conectar()->prepare($query);
 			try {
-				$stmt->execute($array);
-				return 1;
+				return $stmt->execute($array);
 			}
 			catch (PDOException $e) {
-				echo $e->getMessage();
+				return $e->getMessage();
 			}
 		}
 
@@ -28,7 +27,7 @@
 				return $dados = $stmt->fetchAll(PDO::FETCH_ASSOC);
 			}
 			catch (PDOException $e) {
-				echo $e->getMessage();
+				return $e->getMessage();
 			}
 		}
 
@@ -40,7 +39,7 @@
 				return $dados = $stmt->fetchAll(PDO::FETCH_ASSOC);
 			}
 			catch (PDOException $e) {
-				echo $e->getMessage();
+				return $e->getMessage();
 			}
 		}
 

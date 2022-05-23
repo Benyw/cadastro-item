@@ -1,0 +1,21 @@
+DROP DATABASE IF EXISTS itens;
+CREATE DATABASE itens;
+
+USE itens;
+
+CREATE TABLE itens (
+	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	codigo VARCHAR(20) NOT NULL,
+	nome VARCHAR(150) NOT NULL,
+	descricao VARCHAR(255) NOT NULL,
+	familia VARCHAR(50) NOT NULL,
+	unidade_medida VARCHAR(10) NOT NULL,
+	estabelecimento VARCHAR(50) NOT NULL,
+	descricao_estabelecimento VARCHAR(255) NOT NULL,
+	informacoes_complementares VARCHAR(255) DEFAULT NULL,
+	data_implementacao DATE NOT NULL,
+	data_liberacao DATE NOT NULL,
+	situacao INT DEFAULT 1 NOT NULL,
+	created_at DATETIME DEFAULT CURRENT_TIMESTAMP() NOT NULL,
+	updated_at DATETIME DEFAULT CURRENT_TIMESTAMP() ON UPDATE CURRENT_TIMESTAMP() NOT NULL
+);
