@@ -146,7 +146,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <label for="txtDescricaoEstabelecimento" class="form-label">Informações complementares:</label>
+            <label for="txtDescricaoEstabelecimento" class="form-label">Descrição do estabelecimento:</label>
             <div class="input-group mb-6">
               <textarea type="text" class="form-control" id="txtDescricaoEstabelecimento" name="txtDescricaoEstabelecimento" placeholder="Digite aqui a descrição do estabelecimento..." maxlength="250"></textarea>
             </div>
